@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from my_answers import NeuralNetwork
+from deneme import NeuralNetwork
 
 
 data_path = 'Bike-Sharing-Dataset/hour.csv'
@@ -58,7 +58,7 @@ import sys
 ### Set the hyperparameters in you myanswers.py file ###
 ####################
 
-from my_answers import iterations, learning_rate, hidden_nodes, output_nodes
+from deneme import iterations, learning_rate, hidden_nodes, output_nodes
 
 
 N_i = train_features.shape[1]
@@ -88,6 +88,8 @@ plt.plot(losses['train'], label='Training loss')
 plt.plot(losses['validation'], label='Validation loss')
 plt.legend()
 _ = plt.ylim()
+
+
 
 fig, ax = plt.subplots(figsize=(8,4))
 
